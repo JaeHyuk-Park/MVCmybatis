@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property value="com.mysql.jdbc.Driver" name="driver" />
+				<property value="jdbc:mysql://localhost/function" name="url" />
+				<property value="root" name="username" />
+				<property value="1324" name="password" />
+			</dataSource>
+		</environment>
+	</environments>
+	<mappers>
+		<mapper resource="mybatisconnect/dataconnect.xml" />
+	</mappers>
+</configuration>
